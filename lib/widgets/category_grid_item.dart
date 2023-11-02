@@ -20,7 +20,7 @@ class CategoryGridItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(40),
           gradient: LinearGradient(colors: [
             category.color.withOpacity(0.55),
             category.color.withOpacity(0.09),
@@ -29,7 +29,7 @@ class CategoryGridItem extends StatelessWidget {
         child: Text(
           category.title,
           style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.inverseSurface,
               ),
         ),
       ),
